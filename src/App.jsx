@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { CustomTabPanel } from '../Component/CustomTabPanel'
+import BasicTabs,{ CustomTabPanel } from './Component/CustomTabPanel'
+import  {FullWidthTabs,TabPanel} from './Component/TabPanel'
+import ScrollableTabsButtonForce from './Component/ScrollableBtn'
 
 
 function App() {
@@ -10,7 +12,10 @@ function App() {
 
   return (
     <>
-   < CustomTabPanel />
+   < BasicTabs  />
+   <br />
+   < FullWidthTabs />
+   <ScrollableTabsButtonForce />
     </>
   )
 }
